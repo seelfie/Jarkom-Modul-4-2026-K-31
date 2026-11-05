@@ -1,4 +1,4 @@
-# PRAKTIKUM JARKOM MODUL 4 K-31 
+# Praktikum Jarkom Modul 4 K-31 2026
 
 ## Angota Kelompok
 
