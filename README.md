@@ -176,7 +176,7 @@ Kebutuhan tiap segmen dihitung dari **jumlah host + 1 gateway** (interface route
 
 Total ukuran seluruh blok adalah **4188 alamat**. Karena 4188 melebihi 4096 (`/20`), blok induk minimal yang dibutuhkan adalah 8192 alamat atau **`/19`**.
 
-## 3. Metode dan Aturan Penggabungan
+## 3. Metode Penggabungan
 
 Langkah pengerjaan:
 
@@ -184,23 +184,6 @@ Langkah pengerjaan:
 2. Gabungkan subnet secara bertahap dari ujung topologi ke pusat. Ukuran gabungan adalah jumlah ukuran blok, dibulatkan ke pangkat 2, dan prefix = 32 - log2(ukuran).
 3. Setelah menjadi satu blok induk, bagikan alamat dari atas ke bawah. Blok yang lebih besar ditempatkan lebih dulu pada alamat awal agar alamat network selalu kelipatan ukuran blok (aligned).
 4. Hitung Network ID, Netmask, Broadcast, dan Range IP tiap subnet.
-
-Aturan yang dipakai:
-
-- Setiap penggabungan terdiri dari **tepat 2 blok**.
-- Segmen yang digabung berada pada **satu jalur dari router Wired**, sehingga satu blok gabungan dapat dirutekan lewat satu arah keluar.
-- Pengecualian hanya terjadi di level Wired, yaitu gabungan antar jalur yang tidak terhindarkan agar semua subnet menjadi satu blok induk.
-
-Pembagian jalur dari Wired:
-
-| Jalur | Isi segmen |
-|---|---|
-| Cyberia | A1, A2 |
-| Navi | A10, A11, A12, A13 |
-| Tachibana | A14 sampai A25 |
-| Switch2 | A3, A4, A5, A6, A7, A8, A9 |
-
-Cyberia adalah satu-satunya router yang terhubung ke NAT1 sebagai jalan keluar jaringan.
 
 ## 4. Tahap Penggabungan
 
@@ -473,10 +456,9 @@ Cyberia adalah satu-satunya router yang terhubung ke NAT1, sehingga trafik ke lu
 
 ## 9. Pengujian
 
-Pengujian dilakukan di GNS3 dengan ping bertahap: router ke tetangga langsung, host ke gateway, lalu antar cabang (contoh dari Lain di A25 ke JJ di A1) dan dari host ke luar melalui NAT1.
+Pengujian dari node Myumyu ke node Masayuki, Chisa, dan Miho
 
-<!-- Tempelkan tangkapan layar hasil ping dan show ip route di sini, contoh: -->
-<!-- ![Ping A25 ke A1](img/ping-a25-a1.png) -->
+![alt text](assets/pengujian_cidr.png)
 
 ## 10. Kesimpulan
 
