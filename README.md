@@ -15,11 +15,13 @@ https://docs.google.com/spreadsheets/d/13hz5RoMRi5G96lwfPW-DccZrPvWZEDAc/edit?us
 CPT - VLSM
 
 1. Topologi
+   
    Berikut adalah topologi yang dibangun di Cisco Packet Tracer. Topologi ini terdiri dari 25 subnet (A1 - A25).
    
    ![alt text](assets/topologi_cpt.png)
 
 2. Total Penggunaan Subnet
+   
    Terdapat 25 subnet dengan total kebutuhan IP sebanyak 2814. Setelah prefix tiap subnet ditentukan, total ukuran bloknya adalah 4188 alamat dengan 4138 IP host yang available. Karena terdapat 4188 alamat yang akan digunakan, blok terkecil yang dapat menampung seluruh subnet adalah 8192, jadi prefix blok induknya adalah /19.
 
    Kemudian pohon pembagian IP untuk VLSM dapat dilihat pada gambar berikut ini. 
@@ -29,9 +31,9 @@ CPT - VLSM
    [VLSM Tree yang lebih jelas](assets/VLSM_Tree.png)
 
 3. Static routing 
+  
    - **Arah ke atas (menuju Cyberia):** menggunakan satu default route (`0.0.0.0/0`). Semua tujuan yang tidak dikenali router akan diteruskan ke router di atasnya.
-   - **Arah ke bawah (menjauhi Cyberia):** menggunakan route spesifik sesuai subnet hasil VLSM.
-   - **Peringkasan route:** beberapa subnet digabung menjadi satu entri apabila next hop-nya sama.
+   - **Arah ke bawah (menjauhi Cyberia):** menggunakan route sesuai subnet hasil VLSM.
 
     Tabel Route
 
@@ -128,4 +130,5 @@ CPT - VLSM
     | Shibuya | 0.0.0.0 | 0.0.0.0 | 10.79.16.89 (Phantoma) |
 
 4. Konfigurasi Static IP 
+   
    Konfigurasi static ip dilakukan pada setiap router ataupun host sesuai dengan range ip yang telah didapatkan pada spreadsheet pembagian ip vlsm. 
