@@ -10,7 +10,7 @@
 ## Laporan 
 
 [Link SPS] : 
-https://docs.google.com/spreadsheets/d/13hz5RoMRi5G96lwfPW-DccZrPvWZEDAc/edit?usp=sharing&ouid=114055821902524490865&rtpof=true&sd=true
+https://docs.google.com/spreadsheets/d/13hz5RoMRi5G96lwfPW-DccZrPvWZEDAc/edit?usp=sharing&ouid=115121444487039308209&rtpof=true&sd=true
 
 CPT - VLSM
 
@@ -37,13 +37,13 @@ CPT - VLSM
 
     Tabel Route
 
-    **Cyberia**
+    [Cyberia]
 
     | Network Tujuan | Netmask | Next Hop | Keterangan |
     |---|---|---|---|
     | 10.79.0.0 | 255.255.224.0 | 10.79.16.58 | Seluruh subnet di bawah Wired (/19) |
 
-    **Wired**
+    [Wired]
 
     | Network Tujuan | Netmask | Next Hop | Subnet Tujuan |
     |---|---|---|---|
@@ -64,14 +64,14 @@ CPT - VLSM
     | 10.79.16.72 | 255.255.255.248 | 10.79.16.70 | A16 dan A18 (via Tachibana) |
     | 10.79.16.80 | 255.255.255.240 | 10.79.16.70 | A20, A22, dan A24 (via Tachibana) |
 
-    **Schumann**
+    [Schumann]
 
     | Network Tujuan | Netmask | Next Hop | Subnet Tujuan |
     |---|---|---|---|
     | 0.0.0.0 | 0.0.0.0 | 10.79.16.33 | Default (Wired) |
     | 10.79.4.0 | 255.255.252.0 | 10.79.16.62 | A9 (via Accela) |
 
-    **Tachibana**
+    [Tachibana]
 
     | Network Tujuan | Netmask | Next Hop | Subnet Tujuan |
     |---|---|---|---|
@@ -83,7 +83,7 @@ CPT - VLSM
     | 10.79.16.76 | 255.255.255.252 | 10.79.16.74 | A18 (via Deus) |
     | 10.79.16.80 | 255.255.255.240 | 10.79.16.74 | A20, A22, dan A24 (via Deus) |
 
-    **Deus**
+    [Deus]
 
     | Network Tujuan | Netmask | Next Hop | Subnet Tujuan |
     |---|---|---|---|
@@ -93,7 +93,7 @@ CPT - VLSM
     | 10.79.16.48 | 255.255.255.248 | 10.79.16.78 | A21 (via Protocol7) |
     | 10.79.16.80 | 255.255.255.240 | 10.79.16.78 | A20, A22, dan A24 (via Protocol7) |
 
-    **Protocol7**
+    [Protocol7]
 
     | Network Tujuan | Netmask | Next Hop | Subnet Tujuan |
     |---|---|---|---|
@@ -103,7 +103,7 @@ CPT - VLSM
     | 10.79.16.48 | 255.255.255.248 | 10.79.16.82 | A21 (via Knights) |
     | 10.79.16.80 | 255.255.255.240 | 10.79.16.82 | A22 dan A24 (via Knights) |
 
-    **Knights**
+    [Knights]
 
     | Network Tujuan | Netmask | Next Hop | Subnet Tujuan |
     |---|---|---|---|
@@ -112,14 +112,14 @@ CPT - VLSM
     | 10.79.16.88 | 255.255.255.252 | 10.79.16.86 | A24 (via Phantoma) |
     | 10.79.15.192 | 255.255.255.192 | 10.79.16.86 | A25 (via Phantoma) |
 
-    **Phantoma**
+    [Phantoma]
 
     | Network Tujuan | Netmask | Next Hop | Subnet Tujuan |
     |---|---|---|---|
     | 0.0.0.0 | 0.0.0.0 | 10.79.16.85 | Default (Knights) |
     | 10.79.15.192 | 255.255.255.192 | 10.79.16.90 | A25 (via Shibuya) |
 
-    **Router dengan default route saja**
+    [Psyche, Copland, Accela, Navi, Shibuya]
 
     | Router | Network Tujuan | Netmask | Next Hop |
     |---|---|---|---|
