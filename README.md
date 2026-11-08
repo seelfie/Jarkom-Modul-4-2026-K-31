@@ -458,7 +458,7 @@ Cyberia adalah satu-satunya router yang terhubung ke NAT1, sehingga trafik ke lu
 
 Pengujian dari node Myumyu ke node Masayuki, Chisa, dan Miho
 
-![alt text](assets/pengujian_cidr.png)
+![alt text](assets/pengujian_cidr.jpeg)
 
 ## 10. Kesimpulan
 
