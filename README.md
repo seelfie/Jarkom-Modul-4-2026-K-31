@@ -140,7 +140,7 @@ Berbeda dengan VLSM yang langsung mengalokasikan alamat dari subnet terbesar, pa
 
 ## 1. Topologi
 
-
+![alt text](assets/topologi_cidr.png)
 
 ## 2. Kebutuhan Alamat per Segmen
 
